@@ -1,6 +1,6 @@
 module.exports =
-	configDefaults:
-		cobcExecutablePath: null
+  configDefaults:
+    cobcExecutablePath: null
 
-	activate: ->
-		console.log 'activate linter-cobc'
+  activate: ->
+    console.log 'activate linter-cobc'
