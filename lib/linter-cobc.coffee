@@ -14,7 +14,7 @@ class LinterCobc extends Linter
   constructor: (editor) ->
     super(editor)
 
-    atom.config.observe 'linter-cobc.cobcExecutablePath', ->
+    atom.config.observe 'linter-cobc.cobcExecutablePath', =>
       @executablePath = atom.config.get 'linter-cobc.cobcExecutablePath'
 
   destroy: ->
