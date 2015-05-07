@@ -1,6 +1,9 @@
 module.exports =
-  configDefaults:
-    cobcExecutablePath: null
+  config:
+    cobcExecutablePath:
+      default: null
+      title: 'GNU Cobol executable path.'
+      type: 'string'
 
   activate: ->
     console.log 'activate linter-cobc'

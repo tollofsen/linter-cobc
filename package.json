@@ -1,10 +1,9 @@
 {
   "name": "linter-cobc",
   "linter-package": true,
-  "activationEvents": [],
   "main": "./lib/init",
   "version": "0.0.1",
-  "description": "Linter for COBOL using GNU COBOL.",
+  "description": "Linter for COBOL using GNU Cobol.",
   "repository": "https://github.com/tollofsen/linter-cobc",
   "license": "MIT",
   "engines": {
