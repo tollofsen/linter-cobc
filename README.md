@@ -1,2 +1,2 @@
 # linter-cobc
-Lint COBOL files using GNU COBOL.
+Lint COBOL files using GnuCOBOL.
