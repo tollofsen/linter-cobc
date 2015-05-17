@@ -1,6 +1,6 @@
-##{exec, child} = require 'child_process'
 linterPath = atom.packages.getLoadedPackage("linter").path
 Linter = require "#{linterPath}/lib/linter"
+{CompositeDisposable} = require "atom"
 
 class LinterCobc extends Linter
   @syntax: 'source.cobol'
