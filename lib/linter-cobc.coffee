@@ -14,11 +14,13 @@ class LinterCobc extends Linter
   constructor: (editor) ->
     super(editor)
 
-    atom.config.observe 'linter-cobc.cobcExecutablePath', =>
+    @disposables = new CompositeDisposable
+
+    @disposables.add atom.config.observe 'linter-cobc.cobcExecutablePath', =>
       @executablePath = atom.config.get 'linter-cobc.cobcExecutablePath'
 
   destroy: ->
-    atom.config.unobserve 'linter-cobc.cobcExecutablePath'
+    @disposables.dispose()
 
   errorStream: 'stderr'
 
