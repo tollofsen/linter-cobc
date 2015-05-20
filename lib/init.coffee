@@ -1,7 +1,7 @@
 module.exports =
   config:
     cobcExecutablePath:
-      default: null
+      default: ''
       title: 'GnuCOBOL executable path.'
       type: 'string'
 
